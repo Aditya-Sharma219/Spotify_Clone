@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="white" data-encore-id="icon" role="img" aria-hidden="true" width="28" height="28" viewBox="0 0 24 24">
+    <!-- Background circle -->
+    <circle cx="12" cy="12" r="12" fill="black" />
+    <!-- Centered path -->
+    <g transform="translate(9, 6)">
+        <path d="M5.03-1.53a.75.75 0 0 1 0 1.06L-1.44 6l6.47 6.47a.75.75 0 1 1-1.06 1.06L-2.56 6 4.97-1.53a.75.75 0 0 1 1.06 0z" fill="white"></path>
+    </g>
+</svg>

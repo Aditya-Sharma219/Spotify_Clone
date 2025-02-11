@@ -1,0 +1,54 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+.bulb {
+    width: 100px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 50% 50% 45% 45%;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.bulb::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 0 0 10px 10px;
+}
+
+.bulb.on {
+    background-color: #ffeb3b;
+    box-shadow: 0px 0px 50px 20px #ffeb3b;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}

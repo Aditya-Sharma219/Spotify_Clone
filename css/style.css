@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+.leftkahead {
+    font-size: large;
+    background-color: rgb(24, 24, 24);
+    margin: 8px;
+    padding: 8px;
+    height: 20vh;
+    width: 23vw;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    /* font-weight: 500; */
+    font-style: normal;
+    cursor: pointer;
+}
+
+.logo {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.slogo {
+    height: 40px;
+}
+
+.home {
+    display: flex;
+    padding: 8px;
+}
+
+.home img {
+    padding: 0px 18px 0px 0px;
+}
+
+.home p {
+    font-weight: 900;
+}
+
+.search {
+    display: flex;
+    padding: 8px;
+}
+
+.search p:hover {
+    color: white;
+}
+
+.search img {
+    padding: 0px 20px 0px 0px;
+}
+
+/* .search img:hover{
+    filter: invert(1);
+} */
+
+
+
+.search p {
+    color: grey;
+    font-weight: 900;
+}
+
+.library {
+    height: 75vh;
+    background-color: rgb(24, 24, 24);
+    width: 23vw;
+    font-size: large;
+    background-color: rgb(24, 24, 24);
+    margin: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    /* font-weight: 500; */
+    font-style: normal;
+    position: relative;
+}
+
+
+.librarykahead {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+.lib {
+    display: flex;
+    align-items: center;
+}
+
+.lib p {
+    color: grey;
+}
+
+.lib p:hover {
+    color: white;
+}
+
+/* .plus img:hover{
+    filter: invert();
+} */
+.plus img {
+    padding: 5px;
+}
+
+.plus img:hover {
+    border-radius: 50%;
+    background-color: rgb(47, 46, 46);
+    padding: 5px;
+}
+
+.songslist ul li {
+    list-style: decimal;
+    padding: 8px;
+    margin: 8px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid grey;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 50px;
+
+}
+
+.songslist ul {
+    font-size: 14px;
+}
+
+.songslist {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    padding: 0px 10px;
+
+}
+
+.playnow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.librarykafooter {
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    height: 100px;
+    width: 23vw;
+    /* height: 30vh; */
+    /* overflow: hidden; */
+    /* position: absolute;
+    bottom: 0px; */
+    padding: 20px;
+}
+
+.librarykafooter a {
+    text-decoration: none;
+    color: grey;
+    background-color: rgb(24, 24, 24);
+}
+
+/* .librarykafooter div {
+    height: 36px;
+    width: 44px;
+
+} */
+
+.librarykacontent {
+    height: 350px;
+    width: 23vw;
+    overflow: auto;
+
+
+}
+
+/* .songslist{
+
+    overflow-wrap: scroll;
+} */
+
+
+
+/* Scrollbar itself */
+.librarykacontent::-webkit-scrollbar {
+    width: 12px;
+    /* Width of the scrollbar */
+
+}
+
+/* Track (background of the scrollbar) */
+.librarykacontent::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the track */
+    border-radius: 10px;
+    /* Rounding corners of the track */
+}
+
+/* Thumb (the draggable part of the scrollbar) */
+.librarykacontent::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Rounding corners of the thumb */
+}
+
+/* Thumb on hover */
+.librarykacontent::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Darker color on hover */
+}
+
+.container {
+    display: flex;
+}
+
+.content {
+    overflow-wrap: scroll;
+}
+
+.right {
+    width: 75vw;
+    background-color: rgb(24, 24, 24);
+    height: 96vh;
+    margin: 8px;
+    /* padding: 8px; */
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    /* font-weight: 500; */
+    font-style: normal;
+    /* position: relative; */
+}
+
+.rightkahead {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    background-color: rgb(15, 14, 14);
+    /* margin: 8px; */
+    padding: 8px;
+    border-radius: 8px 8px 0px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrows img {
+    padding: 0px 8px;
+    /* gap: 8px; */
+}
+
+.buttons button {
+    /* outline: none; */
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+}
+
+.buttons {
+    gap: 18px;
+    display: flex;
+    padding: 0px 18px;
+
+}
+
+.signupbutton {
+    background-color: rgb(0, 0, 0);
+    color: grey;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.signupbutton:hover {
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.loginbutton {
+    font-size: 15px;
+    font-weight: 800;
+
+}
+
+.loginbutton:hover {
+    background-color: rgb(205, 203, 203);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.contentkahead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 10px 15px;
+}
+
+.contentkahead h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.contentkahead p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.contentkahead p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.playlists {
+    display: flex;
+    margin: 10px;
+    width: 98%;
+    /* background-color: pink; */
+    /* position: relative; */
+}
+
+.cardcontainer {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: 450px;
+}
+
+/* Scrollbar itself */
+.cardcontainer::-webkit-scrollbar {
+    width: 12px;
+    /* Width of the scrollbar */
+
+}
+
+/* Track (background of the scrollbar) */
+.cardcontainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the track */
+    border-radius: 10px;
+    /* Rounding corners of the track */
+}
+
+/* Thumb (the draggable part of the scrollbar) */
+.cardcontainer::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Rounding corners of the thumb */
+}
+
+/* Thumb on hover */
+.cardcontainer::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Darker color on hover */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* margin: 10px; */
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    height: 300px;
+    width: 180px;
+}
+
+.card:hover {
+    background-color: rgb(31, 31, 31);
+    cursor: pointer;
+    /* background-color: rgb(98, 184, 70); */
+    /* opacity: 1; */
+}
+
+.cardkiimg {
+    height: 150px;
+    width: 150px;
+    /* border-radius: 50%; */
+}
+
+.playbutton {
+    position: absolute;
+    top: 180px;
+    right: 20px;
+    /* left: 0px; */
+    z-index: 10;
+    /* bottom: 0; */
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    padding: 5px 5px 5px 8px;
+    background-color: rgb(51, 183, 51);
+    border-radius: 50%;
+    height: 30px;
+}
+
+.card:hover .playbutton {
+    top: 150px;
+    opacity: 1;
+}
+
+/* .playbutton:hover{
+    top: 150px;
+    opacity: 1;
+} */
+
+.card p {
+    color: grey;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.card h4 {
+    padding: 6px 0px
+}
+
+.playbar {
+    display: flex;
+    width: 75%;
+    /* position: fixed; */
+    /* bottom: 0; */
+    height: 70px;
+    background-color: green;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 40px; */
+    position: fixed;
+    bottom: 20px;
+    border-radius: 5px;
+    gap: 10px;
+
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+}
+
+.songinfo,
+.duration {
+    color: black;
+}
+
+.playbar img {
+    cursor: pointer;
+}
+
+.rightinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.volume {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.volume input {
+    cursor: pointer;
+}
+
+/* Style the range slider */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px; /* Track height */
+    background: #444; /* Track background color */
+    border-radius: 10px;
+    outline: none;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Style the thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(145deg, #1f1f1f, #3a3a3a); /* Thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #6A5ACD; /* Neon glow effect */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Add hover effect for the thumb */
+input[type="range"]:hover::-webkit-slider-thumb {
+    box-shadow: 0px 0px 20px #836FFF; /* Brighter glow on hover */
+}
+
+/* Active track color for WebKit browsers */
+input[type="range"]::-webkit-slider-runnable-track {
+    background: rgba(255, 166, 0, 0.773); /* Active track color */
+    border-radius: 10px;
+}
+
+.seekbar {
+    background-color: white;
+    height: 2px;
+    position: absolute;
+    left: 1%;
+    bottom: 8px;
+    width: 96%;
+    /* justify-self: center; */
+    /* max-width: 98%; */
+    margin: 5px 3px;
+    cursor: pointer;
+}
+
+.circle {
+    background-color: rgb(190, 190, 19);
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    bottom: 8px;
+    left: 0%;
+    transition: left 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.close {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    /* body{
+        background-color: pink;
+    } */
+
+    .rightkahead {
+        height: 10vh;
+        width: 96vw;
+    }
+
+    .right {
+        position: relative;
+        left: -96%;
+        width: 100vw;
+    }
+
+    .left {
+        z-index: 1;
+        width: 100vw;
+        position: relative;
+        left: -100%;
+        transition: left .3s ease-in-out;
+    }
+
+    .playlists {
+        width: 96%;
+    }
+
+    .cardcontainer {
+        height: 550px;
+
+
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        margin: 10px;
+        /* padding: 0px 0px; */
+        gap: 10px;
+        border-radius: 8px;
+        position: relative;
+        height: 300px;
+        width: 150px;
+    }
+
+
+
+    .close {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .arrows {
+        display: flex;
+    }
+
+
+
+    .leftkahead {
+        font-size: large;
+        margin: 8px;
+        padding: 8px;
+        height: 20vh;
+        width: 95vw;
+        border-radius: 8px;
+
+    }
+
+    .slogo {
+        height: 30px;
+    }
+
+    .library {
+        height: 75vh;
+        width: 95vw;
+
+    }
+
+
+    .librarykafooter {
+
+        height: 80px;
+        width: 95vw;
+
+    }
+
+
+    .librarykacontent {
+        height: 500px;
+        width: 95vw;
+
+
+    }
+
+    .playbar {
+        width: 96%;
+    }
+
+    @media screen and (max-width: 800px) {
+
+        .playbar {
+            width: 90%;
+            height: 100px;
+            flex-direction: column;
+            background-color: green;
+            padding: 8px;
+            justify-content: space-between;
+            align-items: center;
+            /* height: 40px; */
+            position: fixed;
+            bottom: 20px;
+            border-radius: 5px;
+            gap: 10px;
+
+        }
+
+        .center {
+            position: absolute;
+            left: 40%;
+            bottom: 40px;
+        }
+
+
+        .seekbar {
+            height: 3px;
+            bottom: 3px;
+        }
+
+        .circle {
+            bottom: 3px;
+        }
+
+    }
+
+}
